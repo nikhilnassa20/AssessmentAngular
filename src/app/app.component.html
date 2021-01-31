@@ -1,0 +1,41 @@
+<span>
+  <h1>{{title}}</h1>
+</span>
+<table border=1>
+
+  <tbody>
+    <tr *ngFor="let i of items">
+      <div [ngSwitch]=i.Grade>
+        <div style="color: green" *ngSwitchCase=gradeA>
+          <td>{{i.firstName}}</td>
+          <td>{{i.lastName}}</td>
+          <td>{{i.age}}</td>
+          <td>{{i.Grade}}</td>
+        </div>
+
+        <div style="color: orange" *ngSwitchCase=gradeB>
+          <td>{{i.firstName}}</td>
+          <td>{{i.lastName}}</td>
+          <td>{{i.age}}</td>
+          <td>{{i.Grade}}</td>
+        </div>
+
+        <div style="color: red" *ngSwitchCase=gradeC>
+          <td>{{i.firstName}}</td>
+          <td>{{i.lastName}}</td>
+          <td>{{i.age}}</td>
+          <td>{{i.Grade}}</td>
+        </div>
+
+        <div style="color: blue" *ngSwitchCase=gradeO>
+          <td>{{i.firstName}}</td>
+          <td>{{i.lastName}}</td>
+          <td>{{i.age}}</td>
+          <td>{{i.Grade}}</td>
+        </div>
+
+      </div>
+
+    </tr>
+  </tbody>
+</table>
